@@ -1,1 +1,1 @@
-<strong>The first script<strong> prints the absolute path name of the current working directory
+<strong>0-current_working_directory<strong>  <i>prints the absolute path name of the current working directory<i>

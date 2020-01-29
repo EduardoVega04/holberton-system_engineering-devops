@@ -1,1 +1,1 @@
-<strong>The shell part<strong>
+<strong>The first script<strong> prints the absolute path name of the current working directory

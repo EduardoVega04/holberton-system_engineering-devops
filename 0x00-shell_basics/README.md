@@ -11,3 +11,9 @@
 10. Back to the future --> cd -
 11. Lists --> ls -la . .. /boot
 12. File type --> file /tmp/iamafile
+13. We are symbols, and inhabit symbols --> ln -s /bin/ls __ls__
+14. Copy HTML files --> cp *.html ..
+15. Lets move --> mv [[:upper:]]* /tmp/u
+16. Clean Emacs --> rm *~
+17. Tree --> mkdir {welcome,welcome/to,welcome/to/holberton}
+18. Life is a series of commas, not periods --> ls -m -p -a -v

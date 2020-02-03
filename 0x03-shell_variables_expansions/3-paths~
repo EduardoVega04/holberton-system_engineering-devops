@@ -1,2 +1,0 @@
-#!/bin/bash
-echo ls -d */ $PATH | wc

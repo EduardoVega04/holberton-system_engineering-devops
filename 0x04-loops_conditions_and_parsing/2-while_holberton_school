@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script that prints Holberton School 10 times
+
+i=0
+while ((i < 10))
+do
+    printf "Hello Holberton\n"
+    ((i++))
+done

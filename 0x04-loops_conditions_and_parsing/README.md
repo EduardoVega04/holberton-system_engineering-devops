@@ -1,0 +1,1 @@
+<strong>Bash: Loops, conditions and parsing<strong>

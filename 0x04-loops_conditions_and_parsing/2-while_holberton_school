@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script that prints Holberton School 10 times
+# Script that prints Holberton School 10 times using While
 
 i=0
 while ((i < 10))

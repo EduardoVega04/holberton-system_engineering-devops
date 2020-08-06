@@ -1,0 +1,3 @@
+#!/bin/usr/env bash
+# Script to install Apache
+sudo apache2 restart

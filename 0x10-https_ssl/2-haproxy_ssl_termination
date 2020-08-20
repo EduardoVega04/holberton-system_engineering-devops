@@ -44,7 +44,7 @@ frontend www-http
    mode http
    default_backend www-backend
 frontend www-https
-   bind *:443 ssl crt /etc/haproxy/certs/www.eduarweb.tech.pem
+   bind *:443 ssl crt /etc/haproxy/certs/www.estebanweb.tech.pem
    reqadd X-Forwarded-Proto:\ https
    acl letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
@@ -52,7 +52,7 @@ frontend www-https
 backend www-backend
    balance roundrobin
    redirect scheme https if !{ ssl_fc }
-   server 1643-web-01 35.237.233.239 check
-   server 1643-web-02 54.235.2.72 check
+   server 1643-web-01 35.237.233.239:80 check
+   server 1643-web-02 54.235.2.72:80 check
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321

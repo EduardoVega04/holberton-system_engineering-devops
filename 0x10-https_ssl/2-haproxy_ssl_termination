@@ -86,13 +86,11 @@ frontend www-http
    
    mode http
    
-   redirect scheme https code 301 if !{ ssl_fc }
-   
    default_backend www-backend
    
 frontend www-https
 
-   bind *:443 ssl crt /etc/haproxy/certs/www.eduarweb.tech.pem
+   bind *:443 ssl crt /etc/haproxy/certs/www.estebanweb.tech.pem
    
    reqadd X-Forwarded-Proto:\ https
    
@@ -108,9 +106,9 @@ backend www-backend
    
    redirect scheme https if !{ ssl_fc }
    
-   server 1643-web-01 35.237.233.239:80 check
+   server 1542-web-01 34.73.222.49:80 check
    
-   server 1643-web-02 54.235.2.72:80 check
+   server 1542-web-02 54.82.121.70:80 check
    
 backend letsencrypt-backend
 

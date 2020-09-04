@@ -1,0 +1,10 @@
+#!/bin/bash
+
+my_date= date '+%d-%B-%Y'
+
+if [ "$1" ]; then
+    mysqldump -u root -p ($1) --all-databases > backup.sql
+    tar czvf my_date.sql.tgz backup.sql
+else
+    echo "Usage: ./5-mysql_backup <password>"
+fi

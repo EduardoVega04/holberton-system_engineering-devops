@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 
-if [ "$1" ]; then
-    mysqldump -uroot -p"$1" --all-databases > backup.sql
-    tar -czf $(date +"%d-%m-%Y").tar.gz backup.sql
-else
-    echo "Usage: ./5-mysql_backup <password>"
-fi
+mysqldump -uroot -p"$1" --all-databases > backup.sql
+tar -czf "$(date +"%d-%m-%Y")".tar.gz backup.sql

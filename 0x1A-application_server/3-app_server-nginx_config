@@ -62,8 +62,8 @@ add_header X-Served-By 1643-web-01;
                 proxy_pass http://localhost:5000/airbnb-onepage;
         }
 
-        location /number_odd_or_even/<int:n> {
-                proxy_pass http://localhost:5001/number_odd_or_even/<int:n>;
+        location ^~ /airbnb-dynamic/number_odd_or_even/ {
+                proxy_pass http://localhost:5001/number_odd_or_even/;
         }
 
         error_page 404 /404.html;
